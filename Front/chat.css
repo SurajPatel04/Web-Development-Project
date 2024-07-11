@@ -1,0 +1,189 @@
+:root {
+    --primary-bg: #f4f4f4;
+    --primary-color: #333;
+    --primary-border: 1px solid #ccc;
+    --button-hover-bg: #ebebeb;
+    --border-radius: 5px;
+    --padding: 5px;
+    --font-size: 14px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 10px;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 1.3fr 4fr auto;
+}
+
+.Menu-Part,
+.New-List,
+.task {
+    background-color: var(--primary-bg);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.Menu-Part {
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+    gap: 1rem;
+    overflow: hidden;
+}
+
+#Menu-icon,
+.Search-container,
+.ListHeading,
+.btn-Setting {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#Menu-icon,
+.Search-container,
+.list-input-search {
+    gap: 10px;
+}
+
+.Search-container {
+    border: var(--primary-border);
+    border-radius: var(--border-radius);
+    padding: var(--padding);
+    width: 96%;
+}
+
+#menu-input,
+.Search-container input {
+    border: none;
+    outline: none;
+    flex-grow: 1;
+    background-color: var(--primary-bg);
+}
+
+.button,
+.btn-Setting {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    background-color: #f5f5f5;
+    border: none;
+    border-radius: var(--border-radius);
+    padding: var(--padding) 10px;
+    color: var(--primary-color);
+    font-size: var(--font-size);
+    cursor: pointer;
+    width: 100%;
+}
+
+.button span:nth-child(2),
+.btn-Setting span:nth-child(2) {
+    justify-self: start;
+}
+
+.button:hover,
+.btn-Setting:hover {
+    background-color: var(--button-hover-bg);
+}
+
+.button-badge {
+    background-color: #ccc;
+    border-radius: 25%;
+    padding: 3px 7px;
+    font-size: 12px;
+    color: black;
+}
+
+#box,
+#work,
+#List,
+#List-name {
+    position: relative;
+    top: -1px;
+    border-radius: var(--border-radius);
+    height: 16px;
+    width: 16px;
+}
+
+#box {
+    background-color: red;
+}
+
+#work {
+    background-color: aqua;
+}
+
+#List,
+#List-name {
+    background-color: yellow;
+}
+
+.color-pick {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    width: 91%;
+    margin: 7px;
+}
+
+.color-pick div {
+    border-radius: var(--border-radius);
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.aqua {
+    background-color: aqua;
+}
+
+.color1 {
+    background-color: #5c7cfa;
+}
+
+.btn-Setting {
+    height: 40px;
+}
+
+.control-size,
+.control-size-logout {
+    height: 16px;
+    width: 16px;
+}
+
+.control-size-logout {
+    position: relative;
+    top: 1px;
+    height: 22px;
+    width: 22px;
+}
+
+.subchild {
+    padding: var(--padding);
+}
+
+.arrow {
+    position: relative;
+    top: -0.5px;
+    margin-right: 14px;
+}
+
+.today {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.distance {
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}

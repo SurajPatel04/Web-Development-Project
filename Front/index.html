@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./Icon orimage/Todolist.png">
+    <title>To Do</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div class="Menu-Part subchild">
+            <div id="Menu-icon">
+                <h3>Menu</h3>
+                <img class="menu-image" src="./Icon orimage/more.png" alt="">
+            </div>
+            <div class="Search-container">
+                <img class="search" src="./Icon orimage/search.png" alt="">
+                <input id="menu-input"type="text" placeholder="Search">
+            </div>
+            <div class="taskHeading">
+                <b>Tasks</b>
+                <div>
+                    <button class="button upcoming-btn btn-Setting-color">
+                        <span class="button-icon-today arrow">»</span>
+                        <span>Upcoming</span>
+                        <span class="button-badge today">12</span>
+                    </button>
+                </div>
+                <div>
+                    <button class="button btn-Setting-color">
+                        <span class="button-icon-today distance">🗒</span>
+                        <span>Today</span>
+                        <span class="button-badge today">05</span>
+                    </button>
+                </div>
+                <div>
+                    <button class="button btn-Setting-color">
+                        <span class="button-icon-today distance">🗓</span>
+                        <span>Calendar</span>
+                    </button>
+                </div>
+                <div>
+                    <button class="button sticky-btn btn-Setting-color ">
+                        <span class="stciky">🗒️</span>
+                        <span>Sticky Walls</span>
+                    </button>
+                </div>
+                <p>
+                    <hr>
+                </p>
+            </div>
+            <div class="After-tasks">
+                <b><small>Lists</small></b>
+                <div class="ListHeading">
+                    <div>
+                        <button class="button list-btn-height btn-Setting-color">
+                            <span class="button-icon-today distance" id="box"></span>
+                            <span>Personal</span>
+                            <span class="button-badge today">03</span>
+                        </button>
+                    </div>
+                    <div>
+                        <button class="button list-btn-height btn-Setting-color">
+                            <span class="button-icon-today distance" id="work"></span>
+                            <span>Work</span>
+                            <span class="button-badge today">00</span>
+                        </button>
+                    </div>
+                    <div>
+                        <button class="button list-btn-height btn-Setting-color">
+                            <span class="button-icon-today distance List" id="List"></span>
+                            <span>List 1</span>
+                            <span class="button-badge today">03</span>
+                        </button>
+                    </div>
+                    <div>
+                        <button class="button list-btn-height btn-Setting-color">
+                            <span class="button-icon-today distance" id="plus-sign">➕</span>
+                            <span>Add New List</span>
+                        </button>
+                    </div>
+                </div>
+                <p>
+                    <hr>
+                </p>
+                <div class="New-List list-input-box">
+                    <div class="Search-container list-input-search">
+                        <span class="button-icon-today distance List" id="List-name"></span>
+                        <input id="menu-input"type="text" placeholder="List Name">
+                        <br>
+                    </div>
+                    <div class="color-pick">
+                        <div class="yellow"></div>
+                        <div class="blue"></div>
+                        <div class="aqua"></div>
+                        <div class="color1"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div>
+                <b><small>Tags</small></b>
+                <br>
+                <span id="Tag1"><small>Tag 1</span></small>
+            </div> -->
+            <div>
+                <div>
+                    <button class="btn-Setting btn-Setting-color" id="settings">
+                        <img class="control-size" src="./Icon orimage/control.png" alt="">
+                        <span>Settings</span>
+                    </button>
+                </div>
+                <div>
+                    <button class="btn-Setting btn-Setting-color">
+                        <img class="control-size-logout" src="./Icon orimage/exit.png" alt="">
+                        <span id="sign-out">Sign Out</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="center-page subchild">
+            <h1>Today</h1>
+            <hr>
+        </div>
+        <div class="task subchild">
+            <h3>Task:</h3>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
